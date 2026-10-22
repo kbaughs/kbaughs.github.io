@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outage Response Redesign, Kaela Baughs</title>
+<meta name="description" content="Case study: how Kaela Baughs redesigned Severity 1 outage response at HPE and stopped repeat SLA breaches for a Fortune 500 client within six weeks.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Poppins:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header theme-cream">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Kaela Baughs, Business Analyst" width="189" height="56"></a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="index.html#what-i-do">What I do</a>
+      <a href="index.html#case-studies">Case studies</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- CASE HERO (cream) -->
+<section class="case-hero theme-cream">
+  <div class="container stack" style="gap: 24px">
+    <a href="index.html#case-studies" class="back-link small">&larr; All case studies</a>
+    <p class="eyebrow">Case study &nbsp;·&nbsp; HPE</p>
+    <h1 class="case-page-title">Ending repeat Severity 1 SLA breaches for a Fortune 500 client</h1>
+    <p class="hero-intro">Critical outages kept running past a 6-hour SLA because no one owned getting parts and a technician to the same site at the same time. I found the gap, designed the response process that closed it, and the misses stopped within six weeks.</p>
+    <div class="case-meta">
+      <div><p class="small muted">Role</p><p>Business Process Analyst</p></div>
+      <div><p class="small muted">Company</p><p>Hewlett Packard Enterprise</p></div>
+      <div><p class="small muted">Scope</p><p>Network-as-a-Service support for enterprise clients</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AT A GLANCE (dark green) -->
+<section class="section-tight theme-green">
+  <div class="container">
+    <div class="stats stats-plain">
+      <div><p class="stat">6 hrs</p><p class="small muted">Severity 1 SLA. Repairs regularly ran overnight or into the next business day.</p></div>
+      <div><p class="stat">6 weeks</p><p class="small muted">from launch until SLA misses stopped for the client</p></div>
+      <div><p class="stat">7 people</p><p class="small muted">on every outage bridge, with the client on the line</p></div>
+      <div><p class="stat">All</p><p class="small muted">enterprise accounts moved to the new process</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BODY (cream) -->
+<section class="section theme-cream">
+  <div class="container case-body">
+
+    <div class="case-block">
+      <p class="eyebrow">The problem</p>
+      <h2 class="card-title case-h2">A site that can't do business can't wait until tomorrow</h2>
+      <p>For this client, any outage that stopped a location from processing sales was a Severity 1 incident with a 6-hour SLA. Every hour past that window was an hour the location could not take a single sale.</p>
+      <p>This was not an occasional miss. We were consistently breaching the SLA. Repairs routinely ran well past six hours, often overnight or into the next business day. For a Fortune 500 client, a pattern like that puts the whole relationship at risk, not just one ticket.</p>
+    </div>
+
+    <div class="case-block">
+      <p class="eyebrow">What I found</p>
+      <h2 class="card-title case-h2">The repair wasn't the slow part. The coordination was.</h2>
+      <p>Replacement parts and technicians were dispatched on separate tracks. A technician would arrive with no part, or the part would arrive with no one there to install it, and the site waited for the missing piece. Nobody owned the whole incident from start to finish, so there was no single place where parts, technicians, support and the client came together.</p>
+      <p>That meant faster troubleshooting alone would not fix the SLA. The process needed one owner and one shared line of communication for every Severity 1.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- DIAGRAM (raised cream) -->
+<section class="section theme-raised">
+  <div class="container stack" style="gap: 40px">
+    <div class="section-intro">
+      <p class="eyebrow">Before and after</p>
+      <h2 class="section-title">One bridge instead of separate tracks</h2>
+      <p class="lead muted">The 6-hour clock starts the moment the site goes down. Here is what happened next, before and after the redesign.</p>
+    </div>
+
+    <div class="flow-compare">
+      <div class="flow flow-before">
+        <p class="flow-head">Before</p>
+        <ol>
+          <li><span class="flow-num">1</span><p>Site goes down. Severity 1 opens and the 6-hour clock starts.</p></li>
+          <li><span class="flow-num">2</span><p>Technician troubleshoots and confirms hardware is needed.</p></li>
+          <li class="flow-split"><span class="flow-num">3</span><div class="split-pair"><p>Part ordered</p><p>Technician dispatched</p></div><p class="small muted">Separate tracks, no owner, no shared timeline</p></li>
+          <li class="flow-pain"><span class="flow-num">4</span><p>One arrives without the other. The site waits.</p></li>
+          <li class="flow-pain"><span class="flow-num">5</span><p>Repair finishes past SLA, often overnight or the next day.</p></li>
+        </ol>
+      </div>
+
+      <div class="flow flow-after">
+        <p class="flow-head">After</p>
+        <ol>
+          <li><span class="flow-num">1</span><p>Site goes down. Severity 1 opens and the 6-hour clock starts.</p></li>
+          <li class="flow-key"><span class="flow-num">2</span><p>The on-duty Outage Team opens one bridge, with the client on the line and a manager driving it.</p></li>
+          <li class="flow-key"><span class="flow-num">3</span><p>Part and onsite technician are dispatched at the same time, and both are tracked on the bridge until they arrive together.</p></li>
+          <li><span class="flow-num">4</span><p>CSMs send hourly updates: current work, next steps, expected completion.</p></li>
+          <li><span class="flow-num">5</span><p>The original technician verifies with the onsite technician, who stays until every system works.</p></li>
+          <li><span class="flow-num">6</span><p>Reporting's timeline goes to the client and becomes the root cause analysis.</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DESIGNED (cream) -->
+<section class="section theme-cream">
+  <div class="container case-body">
+
+    <div class="case-block">
+      <p class="eyebrow">What I designed</p>
+      <h2 class="card-title case-h2">The Outage Team bridge</h2>
+      <p>I designed a bridge structure that put everyone needed to close a Severity 1 on one call, each with a clear job:</p>
+      <ul class="role-list">
+        <li><strong>Manager on duty</strong> drove the bridge to completion and kept it on task. The role rotated weekly across leadership, including Tier 2 and Tier 3 managers, the Change Management manager, the Project Manager lead and the Director.</li>
+        <li><strong>Original technician</strong> who took the call or ticket stayed with the incident and worked directly with the onsite technician, so no history was lost in a handoff.</li>
+        <li><strong>Onsite technician</strong> was dispatched immediately, alongside the part, to do the hands-on repair.</li>
+        <li><strong>Partner Engagement team member</strong> dispatched the replacement part and stayed on the bridge until it was onsite with the technician.</li>
+        <li><strong>Two CSMs</strong>, the on-call CSM for the week and the CSM over the affected account, communicated every update and finding to the client through hourly updates.</li>
+        <li><strong>Reporting team member</strong> kept a detailed timeline and notes, sent to the client when the bridge closed and used to build the root cause analysis.</li>
+      </ul>
+      <p>The client and their stakeholders stayed on the bridge too, so they heard progress first-hand instead of waiting for a summary. Because managers and CSMs were in a shared weekly rotation across every account, any outage got the same level of support no matter who was on duty.</p>
+    </div>
+
+    <div class="case-block">
+      <h2 class="card-title case-h2">Supporting pieces</h2>
+      <div class="designed-grid">
+        <div><h3 class="mini-title">Safety stock</h3><p class="muted">Worked with Logistics to keep extra switches, access points and cabling on hand, so every client site could receive parts within the SLA window.</p></div>
+        <div><h3 class="mini-title">Hourly update template</h3><p class="muted">Wrote the template CSMs sent every hour: what was being worked on, next steps and an expected completion window.</p></div>
+        <div><h3 class="mini-title">Release rule</h3><p class="muted">The onsite technician was not released until the team confirmed every system was working, so an incident only closed once the site was fully back in business.</p></div>
+        <div><h3 class="mini-title">RCA template</h3><p class="muted">Wrote the root cause analysis template the team completed after each incident and reviewed with the client to find remaining pain points.</p></div>
+        <div><h3 class="mini-title">Mock outage calls</h3><p class="muted">Organized practice bridges so the team knew how to open a bridge, who to pull in, and when and how documentation went out before a real outage hit.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESULTS (dark) -->
+<section class="section theme-dark">
+  <div class="container case-body">
+    <div class="case-block">
+      <p class="eyebrow">Results</p>
+      <h2 class="section-title">SLA misses stopped within six weeks</h2>
+      <p class="lead">Six weeks after launch, we were no longer missing Severity 1 SLAs for the client, after a period of consistent breaches. Because the process fixed coordination rather than one account's quirks, it was rolled out across every enterprise account on the program, with the shared rotation keeping support consistent for all of them.</p>
+    </div>
+    <div class="case-takeaway">
+      <p class="eyebrow">What this shows</p>
+      <p class="lead">When a deadline keeps slipping, the delay is often in the handoffs between teams, not in the work itself. Giving the incident one owner and one line of communication fixed what faster troubleshooting alone could not.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT (green) -->
+<section class="section-tight theme-green">
+  <div class="container case-next">
+    <a href="index.html#case-studies" class="button button-outline">&larr; Back to case studies</a>
+    <a href="mailto:baughsk@gmail.com" class="button button-primary">Email me</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Kaela Baughs &nbsp;·&nbsp; Business Analyst</p>
+    <p>© 2026 Kaela Baughs</p>
+  </div>
+</footer>
+
+</body>
+</html>
