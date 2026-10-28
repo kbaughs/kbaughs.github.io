@@ -690,3 +690,10 @@ a:focus-visible {
 }
 .theme-green a:focus-visible,
 .theme-dark a:focus-visible { outline-color: var(--dark-gold); }
+
+/* Monogram shown in the hero arch until a photo is added */
+.arch img.arch-monogram {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+}
