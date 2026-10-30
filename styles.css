@@ -1,6 +1,4 @@
-/* Kaela Baughs portfolio
-   Colors, type and spacing come from the Kaela Baughs design system.
-   Change a value here once and it updates everywhere. */
+/* Welcome to my portfolio ♥ */
 
 :root {
   /* Light theme tokens */
@@ -665,6 +663,105 @@ img { display: block; }
   line-height: 20px;
 }
 .flow-split > p.small { flex-basis: 100%; padding-left: 41px; }
+
+/* "How it works" pipeline */
+
+.pipeline {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.pipeline li {
+  flex: 1 1 160px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pipeline-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--sage);
+  color: var(--on-sage);
+  margin-bottom: 4px;
+}
+
+/* Recreated chat example */
+
+.chat-mock {
+  background: var(--dark-surface);
+  color: var(--dark-ink);
+  border-radius: var(--radius-md);
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+.chat-msg {
+  display: flex;
+  gap: 14px;
+  padding: 12px 20px;
+  border-left: 2px solid var(--dark-gold);
+}
+.chat-msg + .chat-msg { margin-top: 4px; }
+.chat-avatar {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--dark-sage-soft);
+  color: var(--dark-sage);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-content { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.chat-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.chat-name { font-weight: 500; color: var(--dark-sage); }
+.chat-tag {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  background: var(--dark-sage);
+  color: var(--dark-surface);
+}
+.chat-time { font-size: 12px; color: var(--dark-ink-muted); }
+.chat-title { font-weight: 500; }
+.chat-role {
+  font-weight: 400;
+  color: var(--dark-gold);
+  background: rgba(200, 168, 99, 0.12);
+  padding: 0 4px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+.chat-list { margin: 0; padding-left: 20px; color: var(--dark-ink-muted); }
+.chat-reaction {
+  align-self: flex-start;
+  font-size: 12px;
+  padding: 0 8px;
+  border: 1px solid var(--dark-line);
+  border-radius: 10px;
+  color: var(--dark-sage);
+}
+
+@media (max-width: 480px) {
+  .chat-msg { padding: 12px 14px; gap: 10px; }
+}
 
 /* ---------- Footer ---------- */
 
