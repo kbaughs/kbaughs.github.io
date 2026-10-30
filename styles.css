@@ -763,6 +763,154 @@ img { display: block; }
   .chat-msg { padding: 12px 14px; gap: 10px; }
 }
 
+/* ---------- Writing sample document ---------- */
+
+.doc {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #FFFDF8;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: clamp(24px, 6vw, 64px);
+  color: var(--ink);
+}
+.doc h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 36px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.doc p + p { margin-top: 10px; }
+.doc ul, .doc ol { margin: 8px 0 0; padding-left: 22px; }
+.doc li + li { margin-top: 4px; }
+.doc li ol { margin-top: 6px; list-style: lower-alpha; }
+.doc ul + p, .doc ol + p { margin-top: 14px; }
+
+.doc-head { border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+.doc-kicker {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+.doc-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.15;
+  margin: 10px 0 12px;
+}
+.doc-meta { font-size: 13px; color: var(--ink-muted); }
+.doc-author { font-size: 13px; color: var(--ink-muted); margin-top: 4px; }
+.doc-fiction {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  color: var(--ink-muted);
+}
+
+.doc-step {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--sage);
+  color: var(--on-sage);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-glance {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border-left: 3px solid var(--sage);
+  background: var(--surface);
+}
+.doc-glance-title { font-weight: 500; margin-bottom: 10px; }
+.doc-glance dl { margin: 0; display: grid; gap: 8px; }
+.doc-glance dl div { display: flex; flex-wrap: wrap; gap: 2px 16px; }
+.doc-glance dt { flex: 0 0 190px; color: var(--ink-muted); font-size: 14px; }
+.doc-glance dd { margin: 0; flex: 1 1 200px; font-size: 14px; }
+
+.doc-callout {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  line-height: 22px;
+}
+.doc-callout-tip { background: #EEF2EC; border-left: 3px solid var(--sage); }
+.doc-callout-plan { background: #F6EFDD; border-left: 3px solid var(--gold); }
+.doc-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 1px 8px;
+  margin-right: 6px;
+  border-radius: 10px;
+  background: var(--gold);
+  color: #FFFDF8;
+}
+
+.doc-template {
+  margin-top: 14px;
+  padding: 16px 20px;
+  border: 1px dashed var(--ink-muted);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  line-height: 22px;
+}
+.doc-template-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 8px;
+}
+
+.doc-exceptions { margin: 0; border-top: 1px solid var(--line); }
+.doc-exceptions div { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.doc-exceptions dt { font-weight: 500; }
+.doc-exceptions dd { margin: 4px 0 0; color: var(--ink-muted); }
+
+.doc-table-wrap { overflow-x: auto; }
+.doc-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.doc-table th, .doc-table td {
+  text-align: left;
+  padding: 8px 12px 8px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.doc-table th { font-weight: 500; color: var(--ink-muted); }
+
+.print-only { display: none; }
+
+@media print {
+  .no-print { display: none !important; }
+  .print-only { display: block; }
+  body { background: #fff; }
+  .doc-section { padding: 0; background: #fff; border: 0; }
+  .doc p:has(+ .doc-template), .doc p:has(+ ul), .doc p:has(+ ol) { break-after: avoid; }
+  .doc { border: 0; padding: 0; max-width: none; background: #fff; }
+  .doc h2 { break-after: avoid; }
+  .doc-template, .doc-callout, .doc-glance, .doc-exceptions div { break-inside: avoid; }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {

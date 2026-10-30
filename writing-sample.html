@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writing Sample, Kaela Baughs</title>
+<meta name="description" content="Writing sample by Kaela Baughs: a procedure for escalating a Priority 1 support ticket at a fictional software company.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Poppins:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header theme-cream no-print">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Kaela Baughs, Business Analyst" width="189" height="56"></a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="index.html#what-i-do">What I do</a>
+      <a href="index.html#case-studies">Case studies</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="case-hero theme-cream no-print">
+  <div class="container stack" style="gap: 24px">
+    <a href="process-documentation.html" class="back-link small">&larr; Back to the case study</a>
+    <p class="eyebrow">Writing sample</p>
+    <h1 class="case-page-title">A procedure, written the way I write them</h1>
+    <p class="hero-intro">My real process documentation is confidential, so this is a sample procedure for a fictional company. It follows the same structure and style I use at work: clear scope, decision criteria, numbered steps, ready-to-use templates, exceptions and a revision history.</p>
+    <div class="button-row">
+      <a href="assets/writing-sample-p1-escalation.pdf" class="button button-primary">Download PDF</a>
+    </div>
+  </div>
+</section>
+
+<section class="section theme-raised doc-section">
+  <div class="container">
+    <article class="doc">
+
+      <header class="doc-head">
+        <p class="doc-kicker">Fernhollow Software &nbsp;·&nbsp; Support Team Procedures</p>
+        <h1 class="doc-title">Escalating a Priority 1 Support Ticket</h1>
+        <p class="doc-meta">Version 2.1 &nbsp;·&nbsp; Last updated October 2026 &nbsp;·&nbsp; Owner: Support Operations</p>
+        <p class="doc-author print-only">Writing sample by Kaela Baughs &nbsp;·&nbsp; kbaughs.github.io &nbsp;·&nbsp; baughsk@gmail.com</p>
+        <p class="doc-fiction">Sample document. Fernhollow Software is a fictional company, and every name, tool and number below is invented.</p>
+      </header>
+
+      <h2>Overview</h2>
+      <p>This procedure explains how a Support Specialist identifies a Priority 1 (P1) ticket, escalates it to the on-call engineer, and keeps the customer updated until the issue is resolved.</p>
+
+      <h2>Purpose</h2>
+      <p>A P1 means a customer cannot use Fernhollow to run their business. Every minute counts, and the customer needs to know we are on it. Following these steps makes sure the right engineer is working on the issue as fast as possible, nothing is lost in the handoff, and the customer hears from us on a predictable schedule.</p>
+
+      <h2>Scope</h2>
+      <ul>
+        <li>Support Specialists (Tier 1)</li>
+        <li>On-call Tier 2 Engineers</li>
+        <li>Support Lead on duty</li>
+      </ul>
+
+      <div class="doc-glance">
+        <p class="doc-glance-title">At a glance</p>
+        <dl>
+          <div><dt>First reply to customer</dt><dd>Within 15 minutes of the ticket arriving</dd></div>
+          <div><dt>Escalate to Tier 2</dt><dd>Within 30 minutes of confirming the P1</dd></div>
+          <div><dt>Customer updates</dt><dd>Every 60 minutes until resolved</dd></div>
+          <div><dt>Incident summary</dt><dd>Within 1 business day of resolution</dd></div>
+        </dl>
+      </div>
+
+      <h2><span class="doc-step">1</span> Confirm the ticket is a P1</h2>
+      <p>A ticket is a P1 if <strong>at least one</strong> of the following is true and there is <strong>no workaround</strong>:</p>
+      <ul>
+        <li>Fernhollow is down or unusable for all users on the customer's account.</li>
+        <li>Customer data is missing, corrupted or visible to people who shouldn't see it.</li>
+        <li>Payments or invoicing are failing for all of the customer's own customers.</li>
+      </ul>
+      <p>These are <strong>not</strong> P1s. Handle them as Priority 2 using the standard ticket process:</p>
+      <ul>
+        <li>An issue affecting one user, or a few users, on the account</li>
+        <li>Fernhollow is slow, but still working</li>
+        <li>A problem that has a workaround the customer can use for now</li>
+      </ul>
+      <div class="doc-callout doc-callout-tip">
+        <p><strong>When in doubt, escalate.</strong> Downgrading a ticket later takes seconds. A missed P1 can cost us the customer.</p>
+      </div>
+
+      <h2><span class="doc-step">2</span> Send the first reply</h2>
+      <p>Reply to the customer within 15 minutes, even before you have answers. Use this template:</p>
+      <div class="doc-template">
+        <p class="doc-template-label">Template: P1 first reply</p>
+        <p>Hi [first name],</p>
+        <p>Thank you for letting us know. We've marked this as our highest priority, and an engineer is being brought in now. I'll update you within the hour, or sooner if we learn more.</p>
+        <p>If anything changes on your end, reply here and it will reach me right away.</p>
+        <p>[Your name], Fernhollow Support</p>
+      </div>
+
+      <h2><span class="doc-step">3</span> Gather the details</h2>
+      <p>Collect the following before you escalate. If the customer hasn't provided something, ask for it in your first reply, but <strong>don't hold the escalation</strong> waiting for it.</p>
+      <ol class="doc-list">
+        <li>Account name and plan</li>
+        <li>What is affected, and how many users</li>
+        <li>When the issue started</li>
+        <li>Steps to reproduce, if known</li>
+        <li>Error messages or screenshots</li>
+        <li>What you or the customer have already tried</li>
+        <li>The best contact for updates, and their time zone</li>
+      </ol>
+
+      <h2><span class="doc-step">4</span> Escalate to Tier 2</h2>
+      <ol class="doc-list">
+        <li>In the ticket, set <strong>Priority</strong> to <strong>P1</strong>.</li>
+        <li>Assign the ticket to the <strong>Tier 2: On Call</strong> queue.</li>
+        <li>Post in the <strong>#p1-escalations</strong> channel using the template below.</li>
+        <li>If no engineer acknowledges your post within 10 minutes, page the on-call engineer from the on-call schedule.
+          <ol>
+            <li>If there is still no response after another 10 minutes, page the Support Lead on duty.</li>
+          </ol>
+        </li>
+      </ol>
+      <div class="doc-template">
+        <p class="doc-template-label">Template: #p1-escalations post</p>
+        <p><strong>P1: [account name]</strong></p>
+        <p>Ticket: [ticket link]<br>
+        Impact: [what is affected, and how many users]<br>
+        Started: [time and time zone]<br>
+        Tried so far: [steps already taken]<br>
+        Customer contact: [name, time zone]</p>
+      </div>
+      <div class="doc-callout doc-callout-plan">
+        <p><span class="doc-tag">Enterprise plan only</span> Also tag the account's Customer Success Manager in your post. They'll decide whether to contact the customer's leadership directly.</p>
+      </div>
+
+      <h2><span class="doc-step">5</span> Keep the customer updated</h2>
+      <p>Send an update every 60 minutes until the issue is resolved, even if nothing has changed. Silence feels worse to a customer than "we're still working on it."</p>
+      <div class="doc-template">
+        <p class="doc-template-label">Template: P1 hourly update</p>
+        <p>Hi [first name],</p>
+        <p>Here's where we are:</p>
+        <ul>
+          <li><strong>What we're working on:</strong> [current step]</li>
+          <li><strong>What we've ruled out:</strong> [causes checked]</li>
+          <li><strong>Next update:</strong> by [time and time zone]</li>
+        </ul>
+        <p>[Your name], Fernhollow Support</p>
+      </div>
+
+      <h2><span class="doc-step">6</span> Close out the P1</h2>
+      <ol class="doc-list">
+        <li>When Tier 2 confirms the fix, ask the customer to confirm everything works on their end.</li>
+        <li>Only after the customer confirms, set the ticket status to <strong>Resolved</strong>.</li>
+        <li>Within 1 business day, complete the <strong>Incident Summary</strong> form: what happened, how long it lasted, the cause and what prevents it from happening again.</li>
+        <li>Send the summary to the customer, and link it in the ticket.</li>
+      </ol>
+
+      <h2>Exceptions</h2>
+      <dl class="doc-exceptions">
+        <div><dt>The customer calls something a P1 that isn't</dt><dd>Reply within 15 minutes anyway. Explain the priority you've set and why, and when they can expect a fix. Never dismiss the issue; it is urgent to them.</dd></div>
+        <div><dt>Several tickets arrive for the same P1</dt><dd>Keep the first ticket open. Merge the others into it, and reply to each person so they know which ticket to follow.</dd></div>
+        <div><dt>The issue involves data being visible to the wrong people</dt><dd>Escalate as normal, and also message the Security Lead directly. Don't post account details or data in #p1-escalations; write "security issue, details sent to Security Lead" instead.</dd></div>
+        <div><dt>The P1 arrives outside business hours</dt><dd>The after-hours specialist follows this procedure as written. Page the on-call engineer immediately instead of waiting 10 minutes for an acknowledgment.</dd></div>
+      </dl>
+
+      <h2>Related procedures</h2>
+      <ul>
+        <li>Setting ticket priority (P1 to P4)</li>
+        <li>Writing an incident summary</li>
+        <li>Using the on-call schedule and paging tool</li>
+      </ul>
+
+      <h2>Revision history</h2>
+      <div class="doc-table-wrap">
+        <table class="doc-table">
+          <thead><tr><th>Version</th><th>Date</th><th>Change</th></tr></thead>
+          <tbody>
+            <tr><td>2.1</td><td>Oct 2026</td><td>Added after-hours paging exception</td></tr>
+            <tr><td>2.0</td><td>Jul 2026</td><td>Added hourly update template and Enterprise plan step</td></tr>
+            <tr><td>1.0</td><td>Mar 2026</td><td>First version</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </article>
+  </div>
+</section>
+
+<section class="section-tight theme-green no-print">
+  <div class="container case-next">
+    <a href="process-documentation.html" class="button button-outline">&larr; Back to the case study</a>
+    <a href="mailto:baughsk@gmail.com" class="button button-primary">Email me</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer no-print">
+  <div class="container">
+    <p>Kaela Baughs &nbsp;·&nbsp; Business Analyst</p>
+    <p>© 2026 Kaela Baughs</p>
+  </div>
+</footer>
+
+</body>
+</html>
